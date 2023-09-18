@@ -1,0 +1,19 @@
+service: docker-lambda-scaffold
+
+plugins:
+  - serverless-better-credentials
+
+frameworkVersion: ">=1.23.0"
+
+provider:
+  name: aws
+  region: us-west-2
+  ecr:
+    images:
+      docker-lambda-scaffold:
+        path: ./
+
+functions:
+  hello:
+    image:
+      name: docker-lambda-scaffold

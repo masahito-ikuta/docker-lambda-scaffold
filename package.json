@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "serverless-better-credentials": "^1.2.1"
+  }
+}
